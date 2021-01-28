@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header'
+import logo from './img/logo.png'
 
 function App() {
+  let links = [
+    {label:'Electronics', link:'#', active:true},
+    {label:'Fashion', link:'#', active:false},
+    {label:'Tools', link:'#', active:false},
+    {label:'Books', link:'#', active:false},
+    {label:'More', link:'#', active:false},
+  ]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="Container">
+      <Header links={links} logo={logo}/>
     </div>
   );
 }

@@ -1,5 +1,36 @@
 .App {
   text-align: center;
+  background-color: #61dafb;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.Container {
+  text-align: center;
+  background-color: #61dafb;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 1px;
+}
+
+.Header {
+  background-color: blueviolet;
+  border-radius: 10px;
+}
+.Header-Links {
+  background-color: deeppink;
+  float: left;
+  width: 70%;
+  justify-content: space-between;
+}
+.Header-Links a {
+  background-color: firebrick;
+  float: left;
+  margin: 3px;
+}
+.Header-Search {
+  background-color: rgb(143, 98, 216);
+  flex: 1;
 }
 
 .App-logo {
@@ -36,3 +67,155 @@
     transform: rotate(360deg);
   }
 }
+
+
+.menu__search-button {
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  border: 1px solid #c8c9ce;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu__cart-button {
+  height: 42px;
+  width: 84px;
+  border-radius: 15%;
+  border: 1px solid #c8c9ce;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-self: center;
+}
+
+.menu__avatar-button {
+  height: 42px;
+  width: 42px;
+  border-radius: 15%;
+  border: 1px solid #c8c9ce;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-self: center;
+}
+
+.menu__cart-number {
+  float: right;
+  font-size: large;
+  color: deeppink;
+  text-decoration: none;
+}
+
+.menu button:hover  {
+  background-color: rgba(255, 20, 147, 0.60);
+}
+
+.menu__search-form {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  padding: 3px;
+  background-color: white;
+  width: 30%;
+}
+
+.menu__search-input {
+  outline: none;
+  font-size: 15px;
+  padding: 3px;
+  font-weight: 300;
+  border: black;
+}
+
+.menu__link:hover {
+  color: deeppink;
+}
+
+.menu__link--active {
+  color: deeppink;
+  border-top: 4px solid deeppink;
+  font-weight: 700;
+}
+
+.menu__logo {
+  text-indent: -9999999px;
+  display: inline-block;
+  height: 100%;
+  width: 92px;
+  background-size: cover 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+}
+
+.menu__list {
+  list-style-type: none;
+  padding: 0;
+  height: 100%;
+  margin: 0;
+  margin-right: 40px;
+}
+
+.menu__list-item {
+  display: inline-block;
+  height: 100%;
+  margin-right: 20px;
+}
+
+.menu__list-item:last-child {
+  margin-right: 0;
+}
+
+.menu__link {
+  color: gray;
+  display: inline-block;
+  height: 100%;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  padding: 0 3px;
+}
+
+.menu {
+  background-color: white;
+  box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  width: 80%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  position: relative;
+}
+
+.menu__right {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.container {
+  width: 1000px;
+  margin: 20px auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.hide {
+  display: none;
+}
+
+
